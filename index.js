@@ -1,6 +1,5 @@
 import { DataReportMode, IRDataType, IRSensitivity } from "./src/const.js";
 import WIIMote from "./src/wiimote.js"
-
 let requestButton = document.getElementById("request-hid-device");
 
 var wiimote = undefined;
@@ -83,6 +82,12 @@ function initCanvas(){
     if(document.getElementById('buttons').innerHTML != buttonJSON){
       document.getElementById('buttons').innerHTML = buttonJSON
     }
+
+    //button to keyboard i think
+    if (buttonJSON.A == true) {
+      keyboardJS.pressKey('a')
+    }
+
   }
 
   wiimote.AccListener = (x,y,z) => {
