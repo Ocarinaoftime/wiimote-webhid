@@ -86,6 +86,7 @@ function initCanvas(){
     //button to keyboard i think
     if (buttonJSON.A == true) {
       keyboardJS.pressKey('a')
+      console.log("a pressed lmao maybe i did it")
     }
 
   }
