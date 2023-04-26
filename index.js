@@ -81,6 +81,7 @@ function initCanvas(){
 
     if(document.getElementById('buttons').innerHTML != buttonJSON){
       document.getElementById('buttons').innerHTML = buttonJSON
+      console.log(buttonJSON)
     }
 
     //button to keyboard i think
